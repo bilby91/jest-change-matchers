@@ -1,6 +1,6 @@
 import "jest"
 
-/// <reference path="./matchers.d.ts" />
+/// <reference path="../index.d.ts" />
 
 import { toChange } from "./to_change"
 import { toChangeBy } from "./to_change_by"
