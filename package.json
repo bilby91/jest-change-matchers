@@ -1,6 +1,6 @@
 {
   "name": "jest-change-matchers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Change matcher for Jest inspired by RSpec.",
   "main": "lib/index.js",
   "types": "index.d.ts",
