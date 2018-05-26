@@ -1,5 +1,5 @@
 import "jest"
-import "../src"
+import "../"
 
 let sharedState = 0
 
