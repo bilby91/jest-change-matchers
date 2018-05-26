@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toChangeFromTo .not.toChangeFromTo throws an error when it change to previous and new value 1`] = `
+"Expected target not to have changed
+  from: 0
+  to: 2
+Received:
+  from: 0
+  to: 2
+"
+`;
+
+exports[`toChangeFromTo .toChangeFromTo throws an error when it doesn't change from previous value 1`] = `
+"Expected target to have changed
+  from: 1
+  to: 2
+Received:
+  from: 0
+  to: 2
+"
+`;
+
+exports[`toChangeFromTo .toChangeFromTo throws an error when it doesn't change to new value 1`] = `
+"Expected target to have changed
+  from: 0
+  to: 1
+Received:
+  from: 0
+  to: 2
+"
+`;

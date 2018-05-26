@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toChangeBy .not.toChangeBy throws an error when it changes the desired amount 1`] = `
+"Expected target not to have changed by:
+  2
+Received:
+  2
+"
+`;
+
+exports[`toChangeBy .toChangeBy throws an error when it doesn't change the desired amount 1`] = `
+"Expected target to have changed by:
+  1
+Received:
+  2
+"
+`;

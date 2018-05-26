@@ -1,0 +1,44 @@
+{
+  "name": "jest-change-matchers",
+  "version": "1.0.0",
+  "description": "Change matcher for Jest inspired by RSpec.",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "repository": "https://github.com/bilby91/jest-change-matchers",
+  "author": "Martin Fernandez <fmartin91@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --config jest.json --verbose",
+    "posttest": "codecov -f coverage/*.json",
+    "build": "yarn build:src",
+    "build:src": "tsc",
+    "build:tests": "tsc -p __tests__/tsconfig.json",
+    "docs": "typedoc src && touch docs/.nojekyll",
+    "watch": "tsc --watch",
+    "lint": "tslint 'src/**/*.ts' '__tests__/**/*.ts'",
+    "lint:fix": "tslint 'src/**/*.ts' '__tests__/**/*.ts' --fix",
+    "ci": "yarn lint && yarn build:src && yarn build:tests && yarn test",
+    "prepare": "yarn build",
+    "preversion": "yarn test",
+    "changelog": "bundle exec github_changelog_generator"
+  },
+  "keywords": [
+    "jest",
+    "node",
+    "change",
+    "matchers",
+    "rspec"
+  ],
+  "devDependencies": {
+    "@types/jest": "^22.2.0",
+    "@types/node": "9.4.3",
+    "codecov": "3.0.0",
+    "ts-jest": "^22.4.1",
+    "tslint": "5.9.1",
+    "typedoc": "^0.11.1",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "jest": "^23.0.0"
+  }
+}

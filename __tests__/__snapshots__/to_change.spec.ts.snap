@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toChange .not.toChange throws an error when there is a change 1`] = `
+"Expected target not to change.
+Received:
+  1
+"
+`;
+
+exports[`toChange .toChange throws an error when there is no change 1`] = `
+"Expected target to change.
+Received:
+  0
+"
+`;

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": false,
+    "target": "es2017",
+    "lib": ["dom", "es7"],
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "lib",
+    "baseUrl": "."
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "typedocOptions": {
+    "mode": "file",
+    "out": "docs",
+    "exclude": "__test__",
+    "theme": "minimal",
+    "hideGenerator": true,
+    "readme": "README.md",
+    "name": "Jest Change Matchers",
+    "ignoreCompilerErrors": false,
+    "excludePrivate": true,
+    "excludeNotExported": true,
+  }
+}
