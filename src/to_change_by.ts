@@ -4,10 +4,10 @@ export async function toChangeBy(
   target: () => Promise<number>,
   changeCount: number,
 ) {
-  const previousLength = await target()
+  const previousValue = await target()
   await receivedMutator()
-  const newLength = await target()
-  const changeDifference = newLength - previousLength
+  const newValue = await target()
+  const changeDifference = newValue - previousValue
 
   const pass = changeDifference === changeCount
   const message = pass
